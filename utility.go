@@ -12,6 +12,14 @@ func ItemInCollection(item string, collection []string) bool {
 	return false
 }
 
+// Min returns the smaller of two integers
+func Min(a, b int) int {
+    if a < b {
+        return a
+    }
+    return b
+}
+
 // RandomItem returns a random string from an array of strings
 func RandomItem(items []string) string {
 	return items[rand.Intn(len(items))]
